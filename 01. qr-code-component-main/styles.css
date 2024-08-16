@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-white: hsl(0, 0%, 100%); 
+    --color-slate-300: hsl(212, 45%, 89%); 
+    --color-slate-500: hsl(216, 15%, 48%); 
+    --color-slate-900: hsl(218, 44%, 22%);
+    --p-size: 15px;
+    --title-size: 22px;
+}
+body{
+    font-family: 'Outfit';
+    background-color: var(--color-slate-300);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    width: 320px;
+    height: 499px;
+    padding: 16px 16px 40px 16px ;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0px auto;
+}
+.card img{
+    height: 288;
+    width: 100%;
+    border-radius: 10px;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+    text-align: center;
+}
+.card-text h1{
+    color: var(--color-slate-900);
+    font-size: var(--title-size);
+    font-weight: 700;
+    line-height: 120%;
+}
+.card-text p{
+    color: var(--color-slate-500);
+    font-size: var(--p-size);
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
