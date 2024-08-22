@@ -99,3 +99,135 @@ textarea:not([rows]) {
 :target {
     scroll-margin-block: 5ex;
 }
+
+:root{
+
+    --color-Yellow: hsl(47, 88%, 63%) ;
+    --color-White: hsl(0, 0%, 100%) ;
+    --color-Gray-500: hsl(0, 0%, 42%) ;
+    --color-Gray-950: hsl(0, 0%, 7%);
+    --p-size: 1rem;
+}
+
+
+body{
+    font-family: "Figtree";
+    background-color: var(--color-Yellow);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card{
+    padding: 1.5rem;
+    background-color: var(--color-White);
+    max-width: 24rem;
+    min-height: 32.625rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: solid black 1px;
+    box-shadow: 8px 8px black;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    
+}
+
+.text-one{
+    color: var(--color-Gray-950);
+    font-weight: 800;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-Yellow);
+    max-width: 5rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    line-height: 150%;
+    text-align: center;
+}
+
+.text-two{
+    font-size: 0.875rem;
+    color: var(--color-Gray-950);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+h2{
+    font-weight: 800;
+    color: var(--color-Gray-950);
+    line-height: 150%;
+    font-size: 1.5rem;
+    transition: 0.50s all ease ;
+}
+h2:hover{
+    color: var(--color-Yellow);
+    cursor: pointer;
+}
+.description{
+    color: var(--color-Gray-500);
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1rem;
+}
+
+.card-footer{
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+.avatar{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.card-footer img {
+    width: 100%;
+}
+.card-footer p{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--color-Gray-950);
+}
+
+@media screen and (max-width: 767px) {
+    .card{
+        max-width: 20.438rem;
+        min-height: 31.25rem;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 1.25rem;
+    }
+    .text-one{
+        font-size: 0.75rem;
+        max-width: 4.563rem;
+    }
+    .text-two{
+        font-size: 0.75rem
+    }
+    .description{
+        font-size: 0.875rem;
+    }
+
+    .card-footer p{
+        font-size: 0.875rem;
+    }
+}
