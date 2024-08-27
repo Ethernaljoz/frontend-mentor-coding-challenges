@@ -47,6 +47,7 @@ body {
 
 * {
     margin: 0;
+    text-decoration: none;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -107,7 +108,108 @@ textarea:not([rows]) {
     --color-Grey-700: hsl(0, 0%, 20%);
     --color-Grey-800: hsl(0, 0%, 12%);
     --color-Grey-900: hsl(0, 0%, 8%);
-    --p-font: 14px;
+    --p-font: 1rem;
 
 /*  Weights: 400, 600, 700 */
 }
+
+
+body{
+    background-color: var(--color-Grey-900);
+    font-family: "Inter";
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+}
+
+.card{
+    padding: 1.75rem;
+    background-color: var(--color-Grey-800);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+.card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.image{
+    max-width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+h1{
+    font-weight: 700;
+    color: var(--color-White);
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+.location{
+    color: var(--color-Green);
+    font-size: var(--p-font);
+    font-weight: 600;
+    text-align: center;
+}
+
+.career{
+    font-size: 0.875rem;
+    color: var(--color-White);
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.social p{
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--color-Grey-700);
+    border-radius: 0.3rem;
+    font-size: var(--p-font);
+    color: var(--color-White);
+    font-weight: 600;
+    transition: all 1s;
+}
+
+
+.social p:hover{
+    color: var(--color-Grey-900);
+    background-color: var(--color-Green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
